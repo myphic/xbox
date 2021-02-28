@@ -1,0 +1,195 @@
+@import '../css/normalize.scss';
+//Mixins
+@mixin font-lato {
+    font-family: 'Lato', sans-serif;
+}
+
+@mixin button-active {
+    background: linear-gradient(18deg, #686C6F, #373A3C);;
+    font-size: 16px;
+    line-height: 21px;
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    cursor: pointer;
+    outline: none;
+}
+
+// /Mixinss
+// Variables
+
+// /Variables
+
+//COMMON
+
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+a:hover {
+    color: white;
+}
+body {
+    @include font-lato;
+    font-size: 15px;
+    line-height: 16px;
+}
+ul {
+    list-style: none;
+}
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+// /COMMON
+
+// HEADER
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.section-header {
+    background-color: #373A3C;
+}
+.main-menu {
+    display: flex;
+    align-items: center;
+    width: 650px;
+    justify-content: space-between;
+    &__item {
+
+    }
+    &__search {
+        border: 1px solid #cccccc;
+        width: 209px;
+        height: 38px;
+    }
+}
+.user-login-container {
+    position: relative;
+}
+.user-login-container:before {
+    position: absolute;
+    content: "";
+    background: url("/img/user-login.svg") no-repeat;
+    top:50%;
+    transform: translate(-100%, -50%);
+    width: 20px;
+    height: 20px;
+    
+}
+
+
+// /HEADER
+
+
+// SECTION-CAROUSEL
+.carousel {
+    
+    height: 100vh;
+    margin: 0 auto;
+    &__img {
+        height: 100vh;
+    }
+    &__title {
+        margin: 0px;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: white;
+        padding-bottom: 30px;
+    }
+    
+    &__button {
+        @include button-active();
+        padding: 8px 19px;
+    }
+    &__button:hover {
+        background: #8DD83D;
+        
+        transition: 0.1s;
+    }
+}
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.slider-track {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+}
+.slider-buttons {
+    text-align: center;
+
+}
+.slider-item {
+    background: url("/img/starwars2.png");
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.btn-prev {
+    position: absolute;
+    top: 50%;
+    left: 65px;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #8DD83D;
+    border-left: 1px;
+    outline: none;
+}
+.btn-next {
+    position: absolute;
+    top: 50%;
+    right: 65px;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #8DD83D;
+    border-right: 1px;
+    outline: none;
+}
+
+.btn-prev:disabled {
+    display: none;
+}
+
+.btn-next:disabled {
+   display: none;
+}
+
+
+
+// /SECTION-CAROUSEL
+.section-sponsors {
+    margin-top: 30%;
+}
