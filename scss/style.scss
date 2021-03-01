@@ -261,3 +261,69 @@ ul {
 }
 
 // /SECTION-SPONSORS
+
+// GAMES
+
+.games {
+    background-image: url(/img/games/background-image.png);
+    background-repeat: no-repeat;
+    color: #435766;
+    padding-bottom: 140px;
+    padding-top: 97px;
+    &__title {
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 54px;
+    }
+    &__img {
+        width: 318px;
+        height: 180px;
+    }
+    &__button {
+        @include button-active();
+        width: 100%;
+        &:hover {
+            background: #8DD83D;
+            transition: 0.5s;
+        }
+    }
+    &__caption {
+        font-size: 18px;
+        line-height: 21px;
+        margin-top: 0px;
+        margin-bottom: 16px;
+    }
+    &__description {
+        font-size: 21px;
+        line-height: 25px;
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        margin-bottom: 74px;
+    }
+    &__item {
+        background-color: white;
+        flex: 0 0 25%;
+    }
+    &__container {
+        padding: 20px 5%;
+    }
+    &__store-button {
+        @include button-active();
+        width: 207px;
+        height: 53px;
+        display: block;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin: 0 auto;
+    }
+}
+
+// /GAMES
