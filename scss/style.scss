@@ -265,7 +265,7 @@ ul {
 // GAMES
 
 .games {
-    background-image: url(/img/games/background-image.png);
+    background-image: url("/img/games/background-image.png");
     background-repeat: no-repeat;
     color: #435766;
     padding-bottom: 140px;
@@ -327,3 +327,91 @@ ul {
 }
 
 // /GAMES
+
+// SECTION-DESIGN
+
+.section-design {
+    background-image: url(/img/section-design/background-image.png);
+}
+.design {
+    max-width: 930px;
+}
+.design {
+    width: 533px;
+    &__title {
+        margin: 0;
+        padding-top: 114px;
+        padding-bottom: 8px;
+        font-size: 48px;
+        line-height: 56px;
+        color: white;
+    }
+    &__description {
+        margin: 0;
+        padding-bottom: 36px;
+        font-size: 24px;
+        line-height: 28px;
+        color: white;
+    }
+    &__button {
+        @include button-active();
+        margin-bottom: 145px;
+        &--left {
+            padding: 20px 61px 20px 52px;
+        }
+        &--right {
+            padding: 20px;
+        }
+        &:hover {
+            background: #8DD83D;
+            transition: 0.5s;
+        }
+    }
+}
+// /SECTION-DESIGN
+
+// SECTION-FOOTER 
+
+.section-footer {
+    background-color: #373A3C;
+}
+
+.footer {
+    padding-top: 58px;
+    padding-bottom: 50px;
+    &__list {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 200px;
+        padding-left: 135px;
+        margin-bottom: 50px;
+    }
+    &__item {
+        font-size: 14px;
+        line-height: 16px;
+        flex: 0 0 20%;
+        &--green {
+            font-size: 18px;
+            line-height: 21px;
+            color: #8DD83D;
+        }
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        line-height: 19px;
+        color: white;
+    }
+}
+.socials {
+    display: flex;
+    padding: 0px;
+    &__item {
+        margin-right: 20px;
+    }
+}
+
+// /SECTION-FOOTER

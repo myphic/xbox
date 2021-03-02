@@ -515,7 +515,7 @@ ul {
     transition: 0.5s; }
 
 .games {
-  background-image: url(/img/games/background-image.png);
+  background-image: url("/img/games/background-image.png");
   background-repeat: no-repeat;
   color: #435766;
   padding-bottom: 140px;
@@ -581,3 +581,79 @@ ul {
     padding-top: 0px;
     padding-bottom: 0px;
     margin: 0 auto; }
+
+.section-design {
+  background-image: url(/img/section-design/background-image.png); }
+
+.design {
+  max-width: 930px; }
+
+.design {
+  width: 533px; }
+  .design__title {
+    margin: 0;
+    padding-top: 114px;
+    padding-bottom: 8px;
+    font-size: 48px;
+    line-height: 56px;
+    color: white; }
+  .design__description {
+    margin: 0;
+    padding-bottom: 36px;
+    font-size: 24px;
+    line-height: 28px;
+    color: white; }
+  .design__button {
+    background: linear-gradient(18deg, #686C6F, #373A3C);
+    font-size: 16px;
+    line-height: 21px;
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 145px; }
+    .design__button--left {
+      padding: 20px 61px 20px 52px; }
+    .design__button--right {
+      padding: 20px; }
+    .design__button:hover {
+      background: #8DD83D;
+      transition: 0.5s; }
+
+.section-footer {
+  background-color: #373A3C; }
+
+.footer {
+  padding-top: 58px;
+  padding-bottom: 50px; }
+  .footer__list {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200px;
+    padding-left: 135px;
+    margin-bottom: 50px; }
+  .footer__item {
+    font-size: 14px;
+    line-height: 16px;
+    flex: 0 0 20%; }
+    .footer__item--green {
+      font-size: 18px;
+      line-height: 21px;
+      color: #8DD83D; }
+  .footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 19px;
+    color: white; }
+
+.socials {
+  display: flex;
+  padding: 0px; }
+  .socials__item {
+    margin-right: 20px; }
