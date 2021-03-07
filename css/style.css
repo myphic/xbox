@@ -313,10 +313,16 @@ a {
 a:hover {
   color: white; }
 
+html {
+  height: 100%; }
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: 15px;
-  line-height: 16px; }
+  line-height: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; }
 
 ul {
   list-style: none; }
@@ -325,9 +331,6 @@ ul {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto; }
-
-img {
-  max-width: 100%; }
 
 .header-wrapper {
   display: flex;
@@ -355,7 +358,8 @@ img {
 
 .xbox-logo {
   position: relative;
-  z-index: 4; }
+  z-index: 4;
+  max-width: 100%; }
 
 .main-menu {
   display: flex;
@@ -623,7 +627,8 @@ img {
 .section-design {
   background-image: url(/img/section-design/background-image.png);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  flex-grow: 1; }
 
 .design {
   max-width: 533px; }
@@ -665,6 +670,7 @@ img {
   background-color: #373A3C; }
 
 .footer {
+  flex: 0 0 auto;
   padding-top: 58px;
   padding-bottom: 50px; }
   .footer__list {
@@ -700,8 +706,14 @@ img {
   display: none; }
 
 @media (max-width: 768px) {
+  ul {
+    padding-left: 0; }
+  .wrapper {
+    width: 700px; }
   body.lock {
     overflow: hidden; }
+  .user-login-container:before {
+    display: none; }
   .header-burger {
     display: block;
     position: relative;
@@ -714,7 +726,7 @@ img {
     background-color: white;
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 1px;
     left: 0;
     top: 10px;
     z-index: 4;
@@ -746,13 +758,67 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #435766;
     margin: 0;
     padding: 0;
     padding-top: 50px;
     display: block;
-    transition: all 0.5s ease 0s; }
+    transition: all 0.5s ease 0s;
+    overflow: auto;
+    padding-left: 5%; }
+    .main-menu__item {
+      padding-bottom: 10px;
+      font-size: 20px;
+      line-height: 25px; }
     .main-menu__search {
-      height: 20px; }
+      height: 30px; }
   .main-menu.active {
-    top: 0; } }
+    top: 0; }
+  .sponsors__title {
+    font-size: 20px;
+    line-height: 25px; }
+    .sponsors__title--big {
+      font-size: 30px;
+      line-height: 35px; }
+  .sponsors__list {
+    padding-bottom: 50px; }
+  .sponsors__item {
+    margin-bottom: 20px; }
+  .games {
+    padding: 50px 0; }
+    .games__title {
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 15px; }
+    .games__list {
+      margin-bottom: 30px; }
+    .games__item {
+      margin-bottom: 15px; }
+    .games__caption {
+      font-size: 15px;
+      line-height: 20px; }
+    .games__decription {
+      font-size: 18px;
+      line-height: 21px; }
+  .design__title {
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 30px; }
+  .design__description {
+    font-size: 15px;
+    line-height: 20px; }
+  .design__button {
+    margin-bottom: 60px; }
+  .footer {
+    padding-bottom: 0px; }
+    .footer__list {
+      margin-bottom: 15px; }
+    .footer__item {
+      font-size: 12px;
+      line-height: 15px; }
+    .footer__item--green {
+      font-size: 15px;
+      line-height: 18px; }
+    .footer__bottom {
+      font-size: 13px;
+      line-height: 15px; } }
