@@ -373,6 +373,8 @@ ul {
     display: none; }
   .main-menu__search {
     border: 1px solid #cccccc;
+    border-radius: 5px;
+    outline: none;
     width: 209px;
     height: 38px; }
 
